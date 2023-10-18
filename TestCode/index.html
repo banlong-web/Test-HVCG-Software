@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avahome - Kiến Trúc và Xây Dựng</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="./assets/css/flickity.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header id="header" class="header has-transparent has-sticky sticky-jump">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="header-content">
+                    <div class="overlay"></div>
+                    <div class="menu-bar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./assets/images/logo (1).png" alt="" class="header-sticky-logo">
+                            <img src="./assets/images/MAU-AM-BAN.png" alt="" class="header-logo">
+                        </a>
+                    </div>
+                    <div class="flex-menu menu-mobile">
+                        <ul>
+                            <li id="menu-item-1"><a href="#">Trang Chủ</a></li>
+                            <li id="menu-item-2"><a href="#">Giới Thiệu</a></li>
+                            <li id="menu-item-3">
+                                <a href="#">Dự Án <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Biệt Thự</a></li>
+                                    <li><a href="#">Nhà Phố</a></li>
+                                    <li><a href="#">Nội Thất</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-4"><a href="#">Công Trình Thực Tế</a></li>
+                            <li id="menu-item-5"><a href="#">Bảng Giá</a></li>
+                            <li id="menu-item-6"><a href="#">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon-header">
+                        <span class="fa fa-search"></span>
+                        <div class="form-search">
+                            <form action="">
+                                <div class="input">
+                                    <input type="text" id="search" placeholder="Search...">
+                                </div>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="close-menu">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="top-divier full-width"></div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main-content">
+            <!-- Carousel -->
+            <div class="slider-flickity carousel" data-flickity='{"cellAlign": "center",
+               "imagesLoaded": true,
+               "lazyLoad": 1,
+               "freeScroll": false,
+               "wrapAround": true,
+               "autoPlay": 6000,
+               "pauseAutoPlayOnHover" : true,
+               "prevNextButtons": true,
+               "contain" : true,
+               "adaptiveHeight" : true,
+               "dragThreshold" : 10,
+               "percentPosition": true,
+               "pageDots": true,
+               "rightToLeft": false,
+               "draggable": true,
+               "selectedAttraction": 0.1,
+               "parallax" : 0,
+               "friction": 0.6}'>
+                <div id="banner-1" class="banner-header-top has-hover">
+                    <div class="banner-inner fill">
+                        <div class="banner-bg fill">
+                            <div class="bg fill bg-fill bg-loaded"></div>
+                        </div>
+                        <div class="banner-layers container">
+                            <div class="read-more">
+                                <a href="#" class="btn btn-readmore"><span>Xem Thêm</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="banner-2" class="banner-header-top has-hover">
+                    <div class="banner-inner fill">
+                        <div class="banner-bg fill">
+                            <div class="bg fill bg-fill bg-loaded"></div>
+                        </div>
+                        <div class="banner-layers container">
+                            <div class="read-more banner-title">
+                                <p>Biệt Thự</p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#" class="btn btn-readmore"><span>Xem Thêm</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="banner-3" class="banner-header-top has-hover">
+                    <div class="banner-inner fill">
+                        <div class="banner-bg fill">
+                            <div class="bg fill bg-fill bg-loaded"></div>
+                        </div>
+                        <div class="banner-layers container">
+                            <div class="read-more banner-title">
+                                <p>Nhà Phố</p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#" class="btn btn-readmore"><span>Xem Thêm</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-wrapper">
+            <div class="bg fill bg-fill bg-loaded">
+                <span class="letter">A</span>
+                <span class="letter">B</span>
+                <span class="letter">O</span>
+                <span class="letter">U</span>
+                <span class="letter">T</span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="text-content">
+                        <p style="text-transform: uppercase; font-size: 3rem; line-height: 1.2;"><span
+                                style="color: #000000; font-size: 100%; letter-spacing: .05em;">KIẾN TRÚC <span
+                                    style="color: #fa4d09;">AVAHOME</span></span></p>
+                        <p>ĐƠN VỊ THIẾT KẾ KIẾN TRÚC VÀ XÂY DỰNG HÀNG ĐẦU CỦA XU HƯỚNG KIẾN TRÚC HIỆN ĐẠI</p>
+                    </div>
+                    <a href="#" class="btn btn-readmore"><span>Xem Thêm</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-sec-1">
+            <div class="content-section">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                        <div class="banner-content">
+                            <div class="banner-img fill">
+                                <img src="./assets/images/1-5.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="text-title">
+                                <div class="title"><strong>Công Trình</strong></div>
+                                <div class="sub-content">THIẾT KẾ BIỆT THỰ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                        <div class="banner-content">
+                            <div class="banner-img fill">
+                                <img src="./assets/images/1-2-1024x768.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="text-title">
+                                <div class="title"><strong>Kiến Trúc</strong></div>
+                                <div class="sub-content">Thiết Kế Nhà Phố</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                        <div class="banner-content">
+                            <div class="banner-img fill">
+                                <img src="./assets/images/NT-1-1024x676.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="text-title">
+                                <div class="title"><strong>Nội Thất</strong></div>
+                                <div class="sub-content">Thiết Kế Nội Thất</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-wrapper">
+            <div class="bg fill bg-fill bg-loaded">
+                <span class="letter">S</span>
+                <span class="letter">K</span>
+                <span class="letter">I</span>
+                <span class="letter">L</span>
+                <span class="letter">L</span>
+                <span class="letter">S</span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="text-content">
+                        <p style="text-transform: uppercase; font-size: 3rem; line-height: 1.2;"><span
+                                style="color: #000000; font-size: 100%; letter-spacing: .05em;">Dự án <span
+                                    style="color: #fa4d09;">Biệt Thự Hiện Đại</span></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up" >
+                                <div class="bg">
+                                    <img src="./assets/images/0-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/1-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/4-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/0-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/1-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4" >
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/4-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/0-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/1-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/4-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/0-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/1-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/4-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/0-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/1-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/4-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>BIỆT THỰ 12X25M ANH HOÀNG – NINH BÌNH</h6>
+                                    </div>
+                                    <span>Biệt Thự</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-wrapper team-wrapper">
+            <div class="bg fill bg-fill bg-loaded">
+                <span class="letter">T</span>
+                <span class="letter">E</span>
+                <span class="letter">A</span>
+                <span class="letter">M</span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="text-content">
+                        <p style="text-transform: uppercase; font-size: 3rem; line-height: 1.2;"><span
+                                style="color: #000000; font-size: 100%; letter-spacing: .05em;">KIẾN TRÚC | <span
+                                    style="color: #fa4d09;">NHÀ PHỐ.</span></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/D-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 7X15M – ANH HOÀNG DIỄM CHÂU – NGHỆ AN</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/KT-1-1-2048x1536.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 6.4X17.6M KẾT HỢP KINH DOANH CÀ PHÊ – LÀO CAI</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/lan-2-2.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NHÀ PHỐ 4X20M HIỆN ĐẠI – ANH MINH</h6>
+                                    </div>
+                                    <span>Nhà Phố</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-wrapper decor-room">
+            <div class="content">
+                <div class="container">
+                    <div class="text-content">
+                        <p style="text-transform: uppercase; font-size:  1.8rem;; line-height: 1.2;"><span
+                                style="color: #fa4d09;">Nội Thất.</span></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/Tang-2-1-2048x1152.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 5X16M HIỆN ĐẠI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg ">
+                                    <img src="./assets/images/6.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 4X14M HIỆN ĐẠI – TIỆN NGHI</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-4 col-xl-4">
+                            <div class="some-images" data-aos="fade-up">
+                                <div class="bg">
+                                    <img src="./assets/images/a-1.jpg" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="text-hover">
+                                    <div class="title">
+                                        <h6>NỘI THẤT NHÀ PHỐ 6.8X12M PHONG CÁCH GỖ ÓC CHÓ</h6>
+                                    </div>
+                                    <span>Nội Thất</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ower-product">
+            <div class="row">
+                <div class="col-3 col-sm-3 col-xl-3">
+                    <div class="row-img">
+                        <div class="img"><img src="./assets/images/1-6.jpg" alt=""></div>
+                        <div class="img"><img src="./assets/images/2-6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-xl-3">
+                    <div class="row-img">
+                        <div class="img"><img src="./assets/images/287e34faaca764f93db6-e1635224150.jpg" alt=""></div>
+                        <div class="img"><img src="./assets/images/4-6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-xl-3">
+                    <div class="row-img">
+                        <div class="img"><img src="./assets/images/5-6.jpg" alt=""></div>
+                        <div class="img"><img src="./assets/images/6-6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-3 col-xl-3">
+                    <div class="row-img">
+                        <div class="img"><img src="./assets/images/7-5.jpg" alt=""></div>
+                        <div class="img"><img src="./assets/images/8-3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-designer">
+            <div class="background-img">
+                <div class="banner-loaded fill">
+                    <div class="background-banner fill"></div>
+                    <div class="text-banner container">
+                        <h3>BẢNG GIÁ THIẾT KẾ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-3 col-xl-3">
+                        <div class="content-designer">
+                            <div class="title-content">
+                                <p>NỘI THÂT VNĐ/M²</p>
+                            </div>
+                            <div class="price-content">
+                                <p>150.000Đ</p>
+                            </div>
+                            <div class="divier"></div>
+                            <div class="des-1">
+                                <p>
+                                    <strong>NỘI THẤT NHÀ PHỐ</strong>
+                                    <br>
+                                    HIỆN ĐẠI
+                                    <br>
+                                    150.000Đ
+                                    <br>
+                                    <strong>NỘI THẤT BIỆT THỰ</strong>
+                                    <br>HIỆN ĐẠI
+                                    <br>150.000-200.000Đ
+                                </p>
+                            </div>
+                            <div class="des-2">
+                                <p>Phối cảnh 3D nội thất<br>Hồ sơ chi tiết đồ nội thất<br>Bản vẽ trần tường sàn<br>Bản
+                                    vẽ điện chiếu sáng<br>Và các chi tiết liên quan<br>…..<br>…..</p>
+                            </div>
+                            <button class="btn btn-choose-plan"><span>Choose Plan</span></button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-xl-3">
+                        <div class="content-designer">
+                            <div class="title-content">
+                                <p>NHÀ PHỐ VNĐ/M²</p>
+                            </div>
+                            <div class="price-content">
+                                <p>150.000Đ</p>
+                            </div>
+                            <div class="divier"></div>
+                            <div class="des-1">
+                                <p><strong>NHÀ PHỐ</strong><br>HIỆN ĐẠI<br>150.000VNĐ<br><strong>NHÀ
+                                        PHỐ</strong><br>TÂN CỔ ĐIỂN<br>150.000-250.000VNĐ</p>
+                            </div>
+                            <div class="des-2">
+                                <p>Phối cảnh 3D kiến trúc<br>Hồ Sơ xin CPXD<br>Bản vẽ chi tiết kiến trúc<br>Bản vẽ chi
+                                    tiết kết cấu<br>Bản vẽ chi tiết điện<br>Bản vẽ chi tiết nước<br>Bản vẽ các chi tiết
+                                    liên quan</p>
+                            </div>
+                            <button class="btn btn-choose-plan"><span>Choose Plan</span></button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-xl-3">
+                        <div class="content-designer">
+                            <div class="title-content">
+                                <p>BIỆT THỰ VNĐ/M²</p>
+                            </div>
+                            <div class="price-content">
+                                <p>200.000Đ</p>
+                            </div>
+                            <div class="divier"></div>
+                            <div class="des-1">
+                                <p><strong>BIỆT THỰ</strong><br>HIỆN ĐẠI<br>200.000VNĐ<br><strong>BIỆT
+                                        THỰ</strong><br>TÂN CỔ ĐIỂN<br>200.000-300.000VNĐ</p>
+                            </div>
+                            <div class="des-2">
+                                <p>Phối cảnh 3D kiến trúc<br>Phối cảnh 3D tổng thể<br>Hồ sơ xin CPXD<br>Bản vẽ chi tiết
+                                    kiến trúc<br>Bản vẽ chi tiết kết cấu<br>Bản vẽ chi tiết điện, nước<br>Bản vẽ các chi
+                                    tiết liên quan</p>
+                            </div>
+                            <button class="btn btn-choose-plan"><span>Choose Plan</span></button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-xl-3">
+                        <div class="content-designer">
+                            <div class="title-content">
+                                <p>TK CẢI TẠO VNĐ/M²</p>
+                            </div>
+                            <div class="price-content">
+                                <p>100.000Đ</p>
+                            </div>
+                            <div class="divier"></div>
+                            <div class="des-1">
+                                <p><strong>NHÀ PHỐ</strong><br>HIỆN ĐẠI<br>150.000VNĐ<br><strong>BIỆT
+                                        THỰ</strong><br>HIỆN ĐẠI<br>150.000-200.000VNĐ</p>
+                            </div>
+                            <div class="des-2">
+                                <p>Phối cảnh 3D cải tạo<br>Bản vẽ chi tiết phá dỡ cải tạo<br>Bản vẽ chi tiết kiến
+                                    trúc<br>Bản vẽ chi tiết kết cấu<br>Bản vẽ chi tiết điện<br>Bản vẽ chi tiết
+                                    nước<br>Bản vẽ các chi tiết liên quan</p>
+                            </div>
+                            <button class="btn btn-choose-plan"><span>Choose Plan</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-follow">
+            <div class="background-img">
+                <div class="banner-loaded fill">
+                    <div class="background-banner fill"></div>
+                    <div class="text-banner container">
+                        <h3>QUY TRÌNH LÀM VIỆC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-3 col-xl-3">
+                            <div class="logo-footer">
+                                <div>
+                                    <img src="./assets/images/MAU-AM-BAN.png" alt="">
+                                </div>
+                                <div class="text-footer">
+                                    <p>Công ty cổ phần kiến trúc - Avahome</p>
+                                    <p>MST : 0108806839</p>
+                                </div>
+                                <div class="social-link">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-xl-3">
+                            <div class="contact">
+                                <h4 class="title-footer">Liên Hệ</h4>
+                                <p>Số 25, Bùi Ngọc Dương, Bạch Mai, HBT, HN ( Trung tâm 310 - Kiến trúc đô thị Hà Nội -
+                                    UAC )</p>
+                                <p><a href="tel:0982061338">0982.061.338</a></p>
+                                <p><a href="mailto:'avahome.jsc@gmail.com'">avahome.jsc@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-xl-3">
+                            <div class="service-menu">
+                                <h4 class="title-footer">Dịch Vụ</h4>
+                                <ul>
+                                    <li><a href="#">Trang Chủ</a></li>
+                                    <li><a href="#">Giới Thiệu</a></li>
+                                    <li><a href="#">Dự Án</a></li>
+                                    <li><a href="#">Công Trình Thực Tế</a></li>
+                                    <li><a href="#">Bảng Giá</a></li>
+                                    <li><a href="#">Liên Hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-xl-3">
+                            <div class="project">
+                                <h4 class="title-footer">Dự Án Tiêu Biểu</h4>
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/0-2-768x458.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/1-1-768x432.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/1-2-768x638.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/1-768x432.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/4-1-768x576.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/A-3-1-768x542.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/B-1-1-768x432.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/KT-1-3-768x404.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-project">
+                                            <a href="#"><img src="./assets/images/KT-1-768x560.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coppyright">2023 © Design by <strong>HVCG software</strong></div>
+        </div>
+        <div class="go-back-top">
+            <button class="go-back"><i class="fa fa-chevron-up"></i></button>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/my-scripts.js"></script>
+</body>
+
+</html>
